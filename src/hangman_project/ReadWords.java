@@ -1,5 +1,10 @@
 package hangman_project;
 
+/**
+ * @author Johan Dahlberg
+ * @since 21-02-2019
+ */
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -7,6 +12,11 @@ import java.util.Random;
 
 public class ReadWords {
 	
+	/**
+	 * Reads words from a text file and randomly picks one, also removing any non-letter
+	 * characters and converts the word to uppercase.
+	 * @return the randomly chosen word
+	 */
 	public static String getRandomWord()
 	{
 		String word = "";

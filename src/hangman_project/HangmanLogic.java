@@ -1,6 +1,12 @@
 package hangman_project;
 
 import java.util.Scanner;
+
+/**
+ * @author Johan Dahlberg
+ * @since 21-02-2019
+ */
+
 import java.util.concurrent.TimeUnit;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +19,21 @@ public class HangmanLogic {
 	private static String[] wordLetters;
 	private static String word = "";
 	
+	/**
+	 * Welcomes the user when the game is started and calls the printMainMenu method.
+	 * @throws InterruptedException
+	 */
 	public static void welcomeText() throws InterruptedException
 	{
 		System.out.println("Welcome to the Hangman game!");
 		TimeUnit.SECONDS.sleep(2);
 		printMainMenu();
 	}
-	
+
+	/**
+	 * Prints the main menu with different options.
+	 * @throws InterruptedException
+	 */
 	private static void printMainMenu() throws InterruptedException
 	{
 		System.out.println("Main Menu" + "\n" + "1) Start Game" + "\n" + "2) Check Highscores"
@@ -49,6 +63,10 @@ public class HangmanLogic {
 		in.close();
 	}
 	
+	/**
+	 * Prints the difficulties with different options.
+	 * @throws InterruptedException
+	 */
 	private static void printDifficulties() throws InterruptedException
 	{
 		System.out.println("Choose Difficulty" + "\n" + "1) Easy" + "\n" + "2) Medium"
@@ -77,6 +95,9 @@ public class HangmanLogic {
 		in.close();
 	}
 	
+	/**
+	 * Prints the randomly chosen word in underscores.
+	 */
 	private static void printUnderscores() 
 	{
 		for(int i = 0; i < word.length(); i++) {
@@ -84,6 +105,11 @@ public class HangmanLogic {
 		}
 	}
 	
+	/**
+	 * Asks the user to confirm termination of the application.
+	 * @return true if termination confirmed
+	 * @throws InterruptedException
+	 */
 	private static boolean confirmTermination() throws InterruptedException
 	{
 		System.out.println("Are you sure you want to quit the application?" + "\n" + "1) Yes" + "\n" + "2)"
@@ -112,6 +138,11 @@ public class HangmanLogic {
 		return false;
 	}
 	
+	/**
+	 * Starts a round of hangman on the given difficulty and picks a random word.
+	 * @param difficulty the chosen difficulty
+	 * @throws InterruptedException
+	 */
 	private static void launchGame(String difficulty) throws InterruptedException
 	{
 		
@@ -134,6 +165,12 @@ public class HangmanLogic {
 		guessLetter();
 	}
 	
+	/**
+	 * Asks the user to input a letter, return to main menu or quit application.
+	 * Runs like a round of hangman, you either win or lose when enough guesses has
+	 * been made.
+	 * @throws InterruptedException
+	 */
 	private static void guessLetter() throws InterruptedException 
 	{
 		previous = "Game";
@@ -202,6 +239,10 @@ public class HangmanLogic {
 		
 	}
 	
+	/**
+	 * Checks if the word is completed.
+	 * @return true if word is completed
+	 */
 	private static boolean checkIfWordFinished() {
 		
 		for(int i = 0; i < word.length(); i++) {
@@ -213,6 +254,10 @@ public class HangmanLogic {
 		return true;
 	}
 	
+	/**
+	 * Updates the wordLetters array with the guessed letter.
+	 * @param letter the guessed letter
+	 */
 	private static void updateWordLetters(String letter) {
 		
 		for(int i = 0; i < word.length(); i++) {
@@ -222,6 +267,10 @@ public class HangmanLogic {
 		}
 	}
 	
+	/**
+	 * Will print the current top 10 high scores (not yet implemented)
+	 * @throws InterruptedException
+	 */
 	private static void printHighScores() throws InterruptedException
 	{
 		System.out.println("Feature not added yet, returning to Main Menu!");
