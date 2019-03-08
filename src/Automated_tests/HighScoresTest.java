@@ -13,6 +13,6 @@ class HighScoresTest {
 		
 		HighScores sut = new HighScores();
 		assertTrue(sut.getHighScores() != null);
-	}
+	} 
 
 }

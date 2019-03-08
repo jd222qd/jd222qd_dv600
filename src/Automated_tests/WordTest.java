@@ -24,7 +24,7 @@ private static int test_count = 0;
 		assertFalse(sut.contains("a"));
 	}
 	
-	@Test
+	@Test 
 	void shouldReturnTrueIfGuessed(){
 		Word sut = new Word();
 		sut.add("a");

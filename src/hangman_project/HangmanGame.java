@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 public class HangmanGame {
 	
 	private static int guessesLeft = 0;
-	Word word = new Word();
-	HangmanMenus menus = new HangmanMenus();
+	private Word word = new Word();
+	private HangmanMenus menus = new HangmanMenus();
 	
 	public HangmanGame() {
-		
+		 
 	}
 	
 	/**

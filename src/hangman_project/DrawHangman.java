@@ -21,7 +21,7 @@ public class DrawHangman {
 	 */
 	public int printHangMan(String difficulty, int guessesLeft) {
 		
-		if(difficulty.equals("Easy")) {
+		if(difficulty.equals("Easy")) { 
 			if(guessesLeft == 12) {
 				System.out.println(
 						"    			\n" + 

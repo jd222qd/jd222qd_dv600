@@ -9,7 +9,7 @@ import hangman_project.DrawHangman;
 
 class DrawHangmanTest {
 	
-private static int test_count = 0;
+private static int test_count = 0; 
 
 	DrawHangman test;
 	

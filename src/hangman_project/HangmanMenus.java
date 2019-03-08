@@ -16,7 +16,7 @@ public class HangmanMenus {
 	private static String previous = "";
 	private static String difficulty = "";
 	
-	public HangmanMenus() {
+	public HangmanMenus() { 
 
 	}
 	

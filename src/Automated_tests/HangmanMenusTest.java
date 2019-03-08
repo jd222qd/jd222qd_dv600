@@ -25,5 +25,5 @@ class HangmanMenusTest {
 		HangmanMenus sut = new HangmanMenus();
 		System.setIn(new ByteArrayInputStream("1".getBytes()));
 		assertTrue(sut.confirmTermination());
-	}
+	} 
 }

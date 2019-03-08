@@ -12,7 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Random;
 
-public class ReadWords {
+public class ReadWords { 
 	
 	/**
 	 * Reads words from a text file and randomly picks one, also removing any non-letter
