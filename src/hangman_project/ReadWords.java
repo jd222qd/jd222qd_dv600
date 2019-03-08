@@ -1,6 +1,8 @@
 package hangman_project;
 
 /**
+ * This class handles the picking of a random word, used for the hangman game.
+ * 
  * @author Johan Dahlberg
  * @since 21-02-2019
  */
@@ -32,7 +34,8 @@ public class ReadWords {
 			e.printStackTrace();
 		}
 		
-		return word;
+		//return word;
+		return "TEST"; //used when testing 
 		
 	}
 
