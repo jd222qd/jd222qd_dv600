@@ -34,8 +34,8 @@ public class ReadWords {
 			e.printStackTrace();
 		}
 		
-		//return word;
-		return "TEST"; //used when testing 
+		return word; //comment this line away to test
+		//return "TEST"; //remove the comment on this line to test
 		
 	}
 

@@ -106,9 +106,10 @@ public class HangmanGame {
 						word.printUnderscores();
 						System.out.println();
 						System.out.println("You won, congratulations!");
-						TimeUnit.SECONDS.sleep(3);
-						menus.printMainMenu();
-						//add more later
+						HighScores scores = new HighScores();
+						scores.calculateScore(difficulty, guessesLeft);
+						scores.gameWonMenu();
+						
 					}
 					else {
 						guessLetter(difficulty);

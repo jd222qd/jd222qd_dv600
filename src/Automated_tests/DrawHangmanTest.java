@@ -17,7 +17,7 @@ private static int test_count = 0;
 	@BeforeEach
 	public void setUp() {
 		test_count++;
-		System.out.println("Test "+ test_count);
+		System.out.println("Test "+ test_count); 
 	}
 
 

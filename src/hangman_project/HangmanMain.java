@@ -10,10 +10,10 @@ package hangman_project;
 
 public class HangmanMain {
 		
-	public static void main(String[] args) throws InterruptedException
+	public static void main(String[] args) throws InterruptedException 
 	{
 		HangmanMenus menus = new HangmanMenus();
 		menus.welcomeText();
-	}	
+	}	 
 
 }
